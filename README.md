@@ -65,17 +65,3 @@ A **High-Value Transaction** is defined as one where total revenue exceeds the *
 - **Most Popular Payment Method:** **Credit Card** identified as the most frequently used.  
 - **Regional Reliance:** A cross-tabulation (`Region` vs `Payment Method`) revealed that **Europe** relies on **PayPal** for **61.5%** of its transactions.
 
----
-
-## Code Execution Steps
-
-The notebook or Python script is structured in the following logical steps:
-
-1. **Data Cleaning:** Convert the `Date` column to datetime format.  
-2. **Aggregation:** Use `df.sum()`, `df.mean()`, and `df.groupby()` to compute key metrics.  
-3. **Time Series:** Apply `pd.Grouper(freq='M')` for monthly revenue aggregation.  
-4. **Statistical Filtering:** Use `df.quantile(0.75)` to identify the threshold for high-value transactions.  
-5. **Cross-Tabulation:** Implement `pd.crosstab()` to analyze relationships between region and payment method.  
-6. **Visualization:** Generate plots using **Matplotlib** and **Seaborn** to present results.
-
----
